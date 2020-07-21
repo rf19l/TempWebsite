@@ -54,16 +54,16 @@ nav{
 }
 
 
-p1{
+ClubName{
 
     font-weight: bold;
     font-size: 50px;
     white-space: pre-wrap;
 }
-p2{
+MissionStatement{
 }
 
-p3{
+ContactForm{
     white-space:pre-line;
 }
 contact-head{
@@ -153,15 +153,18 @@ form.submit:hover{
 }
 
 
-p4{
+UpcomingEvents{
     :center;
     font-weight: bold;
 }
-p5{
+EventInfo{
     font-size: 24px;
 }
 
+
+/* Custom calendar too difficult to edit events use embed ed instead */
 /**************************CODE FOR CALENDAR ***********************/
+/*
 .calendar_js {
     max-width: 600px;
     margin: 0px auto;
@@ -206,3 +209,4 @@ p5{
     cursor: pointer;
     text-decoration: underline;
 }
+*/
