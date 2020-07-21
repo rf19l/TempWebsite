@@ -1,0 +1,208 @@
+/*{
+    margin 0px;
+    padding:0px
+
+}*/
+body{
+
+    background-image: url("FsuSealOpaque.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 15%;
+    font-size: 30px;
+    font-family: proxima nova,times, serif;
+    box-sizing:border-box;
+
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 8vh;
+    background-color:darkred;
+
+}
+
+.nav-links{
+    color:rgb(226,226,226);
+    display: flex;
+    justify-content: space-around;
+    width:30%;
+}
+.nav-links a{
+    color:rgb(226,226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-links li{
+    list-style: none;
+}
+.NavButton{
+    display:none;
+    cursor: pointer;
+}
+.NavButton div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+
+
+}
+
+
+p1{
+
+    font-weight: bold;
+    font-size: 50px;
+    white-space: pre-wrap;
+}
+p2{
+}
+
+p3{
+    white-space:pre-line;
+}
+contact-head{
+    font-weight:bold;
+    font-size:50px
+}
+
+
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out
+}
+.form-control{
+    width: 600px;
+    font-size:18px;
+    margin-bottom: 16px
+}
+
+form.submit{
+    background: darkred;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top:20px
+}
+form.submit:hover{
+    background-color:#ff4444;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x:hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: darkred;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform:translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .navlinks li{
+        opacity: 0;
+    }
+    .NavButton{
+        display:block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transformX(50px);
+    }
+    to{
+        opacity:1;
+        transformX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+p4{
+    :center;
+    font-weight: bold;
+}
+p5{
+    font-size: 24px;
+}
+
+/**************************CODE FOR CALENDAR ***********************/
+.calendar_js {
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.calendar_js-day {
+    width: 8%;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+    line-height: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+}
+.special_js {
+    background-color: #808080;
+    box-shadow: 0px 2px 1px 0px black;
+}
+
+.calendar_js-day:hover {
+    background-color: #b6ff00;
+    color: black;
+    cursor: pointer;
+}
+
+.calendar_js-months {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    color:  yellow;
+}
+
+.month_html_element {
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+}
