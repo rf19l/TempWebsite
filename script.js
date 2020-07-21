@@ -1,6 +1,3 @@
-/**
- * @format
- */
 
 /*import {AppRegistry} from 'react-native';
 import App from './App';
@@ -35,6 +32,7 @@ const navSlide = () => {
 };
 
 /*****************************CODE FOR CALENDAR ON EVENTS PAGE***********/
+/*
 var date = new Date();
 date.setDate(1);
 
@@ -106,5 +104,6 @@ function Generate_Month(month) {
     }
 
 }
+*/
 
 navSlide();
